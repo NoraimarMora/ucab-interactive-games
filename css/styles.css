@@ -299,4 +299,15 @@
         height: 10.98em;
         width: 10.98em;
     }
+
+    .images .image {
+        height: 8.7em;
+        width: 8.7em;
+        margin: .5em;
+    }
+    
+    .images .image img {
+        height: 8.58em;
+        width: 8.58em;
+    }
 }
