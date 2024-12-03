@@ -1,0 +1,302 @@
+#navbar, #main {
+    margin-bottom: 2.28em;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+.card-img {
+    height: 300px;
+}
+
+.card-img img {
+    height: 100%;
+    width: auto;
+}
+
+#footer {
+    color: var(--bs-secondary-color);
+}
+
+#author {
+    font-weight: bold;
+}
+
+#tablero {
+    height: 435px;
+    padding: 1.5em 2em;
+}
+
+.player {    
+    padding: 5px 15px;
+    font-size: x-large;
+    color: var(--bs-dark);
+}
+
+.player i {
+    width: 30px;
+    text-align: center;
+}
+
+.player.active {
+    background-color: rgba(var(--bs-dark-rgb), 1) !important;
+    color: var(--bs-light)
+}
+
+.hidden {
+    display: none !important;
+}
+
+.cell {
+    border: .15em solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 8em;
+}
+
+.cell i {
+    width: 100%;
+    text-align: center;
+    font-size: 8em;
+}
+
+.cell i.fa-circle {
+    font-size: 6em;
+}
+
+.cell.left {
+    border-left: none;
+}
+
+.cell.right {
+    border-right: none;
+}
+
+.cell.bottom {
+    border-bottom: none;
+}
+
+.cell.top {
+    border-top: none;
+}
+
+.cell.empty:hover {
+    cursor: pointer;
+    background-color: rgba(var(--bs-secondary-bg-rgb), 1) !important;
+}
+
+
+#result {
+    margin: 2em 0;
+    font-size: xx-large;
+}
+
+#result i {
+    font-size: smaller;
+}
+
+.memory-cards .card {
+    background: none;
+    border: none;
+}
+
+.card .face,
+.card .back {
+    backface-visibility: hidden;
+    transition: .5s;
+    height: 100%;
+}
+
+.card .face img,
+.card .back img {
+    box-shadow: 0px 0px 15px 0px rgba(42, 42, 42, 0.75);
+    border-radius: 25px;
+}
+
+.card .front{
+    transform: rotateY(0deg);
+}
+
+.card .back{
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card.flip .front {
+    transform: rotateY(180deg);
+}
+
+.card.flip .back {
+    transform: rotateY(360deg);
+}
+
+.memory-cards .card .face.front img,
+.memory-cards .card .face.front img,
+.image {
+    cursor: pointer;
+}
+
+.memory-cards .card {
+    height: 124px;
+    margin-bottom: .5em;
+}
+
+.memory-cards .card img {
+    height: 124px;
+}
+
+.card.col-md-3 .back {
+    left: 30.75%;
+}
+
+.card.col-md-2 .back {
+    left: 20%;
+}
+
+#parts {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 19.4em;
+}
+
+.droppable,
+.draggable,
+.images .image {
+    border: 1px solid rgba(var(--bs-dark-rgb), 1) !important;
+    padding: 0;
+}
+
+.draggable {
+    cursor: all-scroll;
+    height: 8em;
+    width: 8em;
+    margin: .5em;
+}
+
+.draggable img {
+    height: 7.9em;
+    width: 7.9em;
+}
+
+.droppable {
+    width: 8.06em;
+    height: 8.06em;
+}
+
+.droppable img {
+    height: 7.98em;
+    width: 7.98em;
+}
+
+#puzzle #tablero .row,
+#puzzle #parts .row {
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images .image {
+    height: 8.71em;
+    width: 8.71em;
+    margin: .5em;
+}
+
+.images .image img {
+    height: 8.6em;
+    width: 8.6em;
+}
+
+.selected {
+    box-shadow: 0px 0px 15px 0px rgba(42, 42, 42, 0.75);
+} 
+
+@media (min-width: 1600px) {
+    #navbar, #main {
+        margin-bottom: 9em;
+    }
+
+    #tictactoe #navbar,
+    #tictactoe #main,
+    #memory #navbar,
+    #memory #main,
+    #puzzle #navbar,
+    #puzzle #main {
+        margin-bottom: 4em;
+    }
+
+    .player {
+        padding: 15px;
+    }
+
+    #tablero {
+        height: 596px;
+        padding: 2em;
+    }
+
+    .cell {
+        border: .5em solid black;
+        height: 11em;
+    }
+
+    .cell i {
+        width: 100%;
+        text-align: center;
+        font-size: 10em;
+    }
+
+    .cell i.fa-circle {
+        font-size: 8em;
+    }
+
+    .fields {
+        margin: 1em 0;
+    }
+
+    .memory-cards .card {
+        height: 172px;
+        margin-bottom: .5em;
+    }
+
+    .memory-cards .card img {
+        height: 171px;
+    }
+
+    .card.col-md-3 .back {
+        left: 22.75%;
+    }
+
+    .card.col-md-2 .back {
+        left: 9%;
+    }
+
+    #parts {
+        height: 26.5em;
+    }
+
+    .draggable {
+        width: 8em;
+        height: 8em;
+    }
+
+    .draggable img {
+        height: 7.9em;
+        width: 7.9em;
+    }
+
+    .droppable {
+        width: 11.1em;
+        height: 11.1em;
+    }
+
+    .droppable img {
+        height: 10.98em;
+        width: 10.98em;
+    }
+}
